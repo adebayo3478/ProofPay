@@ -24,7 +24,7 @@ ProofPay is a minimal invoice + checkout system that lets merchants accept USDT0
 
 ---
 
-##  Quick Start (Windows)
+##  Quick Start 
 
 ### Prerequisites
 
@@ -176,7 +176,7 @@ GET /health
 
 ---
 
-## 🔐 Security Notes
+##  Security Notes
 
 - **Never commit `.env` files** - they contain private keys
 - **Use a dedicated anchor wallet** with minimal FLR for gas
@@ -251,13 +251,13 @@ GET /health
 
 ---
 
-## 📄 License
+##  License
 
 MIT License - see LICENSE file for details.
 
 ---
 
-## 🔗 Resources
+##  Resources
 
 - [Flare documentation](https://dev.flare.network/)
 - [ProofRails](https://github.com/proofrails/Middleware-ISO20022-v1.3)
