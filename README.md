@@ -2,11 +2,11 @@
 
 **Crypto invoice payments with ISO 20022 compliance on Flare.**
 
-ProofPay is a minimal invoice + checkout system that lets merchants accept USDT0 payments on the Flare network and automatically generates ISO 20022 compliant receipts with optional on-chain evidence anchoring.
+ProofPay is a minimal invoice + checkout system that lets merchants accept USDT0 payments on the Flare network and automatically generates ISO 20022 compliant receipts with optional onchain evidence anchoring.
 
 ---
 
-## ✨ What It Does
+## What It Does
 
 ```
 ┌──────────────┐      ┌──────────────┐      ┌──────────────┐      ┌──────────────┐
@@ -24,7 +24,7 @@ ProofPay is a minimal invoice + checkout system that lets merchants accept USDT0
 
 ---
 
-## 🚀 Quick Start (Windows)
+##  Quick Start (Windows)
 
 ### Prerequisites
 
@@ -50,7 +50,7 @@ Create `.env` in the repo root:
 # Required
 FLARE_RPC_URL=https://flare-api.flare.network/ext/C/rpc
 CHAIN_ID=14
-USDT0_ADDRESS=0x0B38e83B86d491735fEaa0a791F65c2B99535396
+USDT0_ADDRESS=0xe7cd86e13AC4309349F30B3435a9d337750fC82D
 MERCHANT_ADDRESS=0xYourMerchantWalletAddress
 
 # Optional (for on-chain anchoring)
@@ -65,7 +65,7 @@ Create `.env.local` in `apps/proofpay/`:
 
 ```env
 NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8010
-NEXT_PUBLIC_USDT0_ADDRESS=0x0B38e83B86d491735fEaa0a791F65c2B99535396
+NEXT_PUBLIC_USDT0_ADDRESS=0xe7cd86e13AC4309349F30B3435a9d337750fC82D
 NEXT_PUBLIC_CHAIN_ID=14
 NEXT_PUBLIC_FLARE_RPC_URL=https://flare-api.flare.network/ext/C/rpc
 ```
@@ -112,7 +112,7 @@ npm run dev
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ProofPay/
@@ -140,7 +140,7 @@ ProofPay/
 
 ---
 
-## 🔌 API Reference
+##  API Reference
 
 ### Create Invoice
 ```http
@@ -212,7 +212,7 @@ GET /health
 
 ---
 
-## 📋 Current Limitations (MVP)
+## Current Limitations (MVP)
 
 - **USDT0 only** - no other tokens or native FLR
 - **Single merchant** - one address via env var
@@ -222,13 +222,13 @@ GET /health
 
 ---
 
-## 🚧 Future Roadmap
+## 🚧 Possible Roadmap
 
 ### v1.1 - Enhanced Features
 - [ ] QR codes for mobile payments
 - [ ] Webhook notifications
 - [ ] Email receipts
-- [ ] Multi-token support (USDC, WETH)
+- [ ] Multi-token support (FXRP, FLR)
 
 ### v1.2 - Enterprise
 - [ ] Multi-merchant accounts
@@ -238,7 +238,6 @@ GET /health
 
 ### v1.3 - Compliance
 - [ ] Additional ISO 20022 message types
-- [ ] Full on-chain receipt anchoring
 - [ ] Audit trail and verification portal
 
 ---
@@ -260,6 +259,6 @@ MIT License - see LICENSE file for details.
 
 ## 🔗 Resources
 
-- [Flare Network](https://flare.network/)
-- [ISO 20022 Standard](https://www.iso20022.org/)
-- [USDT0 on Flare](https://flarescan.com/token/0x0B38e83B86d491735fEaa0a791F65c2B99535396)
+- [Flare documentation](https://dev.flare.network/)
+- [ProofRails](https://github.com/proofrails/Middleware-ISO20022-v1.3)
+- [USDT0 on Flare](https://flarescan.com/token/0xe7cd86e13AC4309349F30B3435a9d337750fC82D)
