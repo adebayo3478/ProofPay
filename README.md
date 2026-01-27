@@ -1,6 +1,6 @@
 # ProofPay
 
-**Crypto invoice payments with ISO 20022 compliance on Flare.**
+**Crypto invoice payments with ISO 20022 receipts on Flare.**
 
 ProofPay is a minimal invoice + checkout system that lets merchants accept USDT0 payments on the Flare network and automatically generates ISO 20022 compliant receipts with optional onchain evidence anchoring.
 
