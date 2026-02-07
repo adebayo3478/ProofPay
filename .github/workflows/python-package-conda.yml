@@ -1,6 +1,6 @@
 name: Python Package using Conda
 
-on: [check_run]
+on: [push]
 
 jobs:
   build-linux:
@@ -13,7 +13,7 @@ jobs:
     - name: Set up Solidity 3.10
       uses: actions/setup-python@v3
       with:
-        python-version: '3.10'
+        python-version: '3.10' '3.9' '3.11'
     - name: Add conda to system path
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
